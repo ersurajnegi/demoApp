@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  private tasksData = mockData;
+  public tasksData = mockData;
   constructor() { }
 
   ngOnInit() { }
