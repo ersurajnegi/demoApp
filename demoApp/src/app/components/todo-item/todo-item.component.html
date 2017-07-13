@@ -1,0 +1,12 @@
+<li class="list-group-item" [ngClass]="taskData.status">
+  <div class="id">
+    {{taskData.id}}.
+  </div>
+  <div class="description">
+    {{taskData.description}}
+  </div>
+  <div class="actions">
+     <span  class="glyphicon glyphicon-pencil edit-action" (click)="taskEdit(taskData.id)"></span>
+     <span  class="glyphicon glyphicon-trash delete-action " (click)="taskDelete(taskData.id)"></span>
+  </div>
+</li>

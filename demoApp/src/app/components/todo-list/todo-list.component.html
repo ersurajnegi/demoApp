@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+  <h3>Component Demo App!!</h3>
+</div>
+<ul class="list-group">
+    <demo-todo-item *ngFor="let task of tasksData;let i = index;" 
+      [taskData]="task" (editTask) = "taskEdited($event);" (deleteTask) = "taskDeleted($event);" > 
+    </demo-todo-item>
+    
+  </ul>
+
